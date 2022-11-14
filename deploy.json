@@ -470,7 +470,7 @@
             "DeletionPolicy": "Retain",
             "Properties": {
                 "BucketName": {
-                    "Fn::Sub": "serverless-app-${AWS::AccountId}-${AWS::Region}-${AppName}"
+                    "Fn::Sub": "automation-app-${AWS::AccountId}-${AWS::Region}-${AppName}"
                 },
                 "VersioningConfiguration": {
                     "Status": "Enabled"

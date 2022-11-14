@@ -72,3 +72,16 @@ input#passwordInputSignin {
 .card.border-dark {
   box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
 }
+
+nav.navbar.navbar-expand-sm.navbar-dark.bg-dark.mb-3 {
+  background: #2d2d2b !important;
+}
+.card-header.bg-primary.text-white {
+  background: #b8926a !important;
+}
+.btn-outline-primary {
+  color: #b8926a;
+  background-color: transparent;
+  background-image: none;
+  border-color: #b8926a;
+}

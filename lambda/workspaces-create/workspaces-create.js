@@ -7,7 +7,7 @@ var AWS = require('aws-sdk');
 var workspaces = new AWS.WorkSpaces({
     apiVersion: '2015-04-08'
 });
-
+//node version?
 // WorkSpaces must be tied to a Directory Service ID. Creation of the Directory Service is outside the scope of the portal.
 // By default, all WorkSpaces are configured with 'Auto Stop' mode with a usage timeout of 1 hour.
 var config = {

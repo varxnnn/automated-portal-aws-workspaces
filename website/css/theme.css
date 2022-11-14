@@ -85,3 +85,7 @@ nav.navbar.navbar-expand-sm.navbar-dark.bg-dark.mb-3 {
   background-image: none;
   border-color: #b8926a;
 }
+
+.dropdown-menu.show {
+  margin: 14px 0px 0px -106px;
+}

@@ -470,7 +470,7 @@
             "DeletionPolicy": "Retain",
             "Properties": {
                 "BucketName": {
-                    "Fn::Sub": "automation-app-${AWS::AccountId}-${AWS::Region}-${AppName}"
+                    "Fn::Sub": "automation-app-artifacts-15283055"
                 },
                 "VersioningConfiguration": {
                     "Status": "Enabled"

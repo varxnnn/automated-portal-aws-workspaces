@@ -164,7 +164,7 @@
                                 "Fn::Sub": "states.${AWS::Region}.amazonaws.com"
                             }]
                         },
-                        "Action": "sts:AssumeRole"
+                        "Action": ["sts:AssumeRole", "iam:GetRole"]
                     }]
                 },
                 "Path": "/",

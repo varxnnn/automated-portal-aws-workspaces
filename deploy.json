@@ -50,7 +50,7 @@
             "Description": "GitHub UserName. This username must have access to the GitHubToken."
         },
         "GitHubToken": {
-            "NoEcho": true,
+            "NoEcho": true,     
             "Type": "String",
             "Description": "Secret. OAuthToken with access to Repo. Long string of characters and digits. Go to https://github.com/settings/tokens"
         }

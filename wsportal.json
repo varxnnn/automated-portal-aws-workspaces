@@ -199,13 +199,23 @@
                             "Service": "apigateway.amazonaws.com"
                         },
                         "Action": "sts:AssumeRole"
-                    },
-                    {
-                        "Effect": "Allow",
-                        "Action": "iam:GetRole",
-                        "Resource":"*"
                     }]
                 },
+                "Policies": [
+                    {
+                        "PolicyName": "getRole",
+                        "PolicyDocument": {
+                            "Version": "2012-10-17",
+                            "Statement": [
+                                {
+                                    "Effect": "Allow",
+                                    "Action": "iam:GetRole",
+                                    "Resource":"*"
+                                }                      
+                            ]
+                        }
+                    }
+                ],
                 "ManagedPolicyArns": [
                     "arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs",
                     "arn:aws:iam::aws:policy/AWSStepFunctionsFullAccess"

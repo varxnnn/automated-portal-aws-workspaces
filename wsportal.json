@@ -154,7 +154,7 @@
             "Type": "AWS::IAM::Role",
             "Properties": {
                 "RoleName": {
-                    "Fn::Sub": "${AppName}-${AWS::Region}-sfn-role"
+                    "Fn::Sub": "${AppName}-${AWS::Region}-step-funcs-role"
                 },
                 "AssumeRolePolicyDocument": {
                     "Statement": [{
@@ -210,7 +210,7 @@
             "Type": "AWS::StepFunctions::Activity",
             "Properties": {
                 "Name": {
-                    "Fn::Sub": "${AppName}-Step"
+                    "Fn::Sub": "${AppName}-StepFunc"
                 }
             }
         },
@@ -218,7 +218,7 @@
             "Type": "AWS::StepFunctions::StateMachine",
             "Properties": {
                 "StateMachineName": {
-                    "Fn::Sub": "${AppName}-StateMachine"
+                    "Fn::Sub": "${AppName}-State-Machine"
                 },
                 "DefinitionString": {
                     "Fn::Join": ["", ["{ \"StartAt\": \"WorkspaceApproval\", \"States\": { \"WorkspaceApproval\": { \"Type\": \"Parallel\", \"Branches\": [{ \"StartAt\": \"approvalManualActivity\", \"States\": { \"approvalManualActivity\": { \"Type\": \"Task\", \"Resource\": \"",

@@ -154,7 +154,7 @@
             "Type": "AWS::IAM::Role",
             "Properties": {
                 "RoleName": {
-                    "Fn::Sub": "${AppName}-${AWS::Region}-step-funcs-role"
+                    "Fn::Sub": "${AppName}-${AWS::Region}-step-functions-role"
                 },
                 "AssumeRolePolicyDocument": {
                     "Statement": [{
@@ -189,7 +189,7 @@
             "Type": "AWS::IAM::Role",
             "Properties": {
                 "RoleName": {
-                    "Fn::Sub": "${AppName}-${AWS::Region}-apigateway-role"
+                    "Fn::Sub": "${AppName}-${AWS::Region}-api-gateway-role"
                 },
                 "AssumeRolePolicyDocument": {
                     "Statement": [{
@@ -197,7 +197,7 @@
                         "Principal": {
                             "Service": "apigateway.amazonaws.com"
                         },
-                        "Action": "sts:AssumeRole"
+                        "Action": ["sts:AssumeRole", "iam:GetRole"]
                     }]
                 },
                 "ManagedPolicyArns": [

@@ -62,7 +62,7 @@ After the WorkSpace is provisioned, the user will receive an email directly from
 
 They can also begin managing the WorkSpace through the portal: rebuild, reboot, or delete.
 
-![WorkSpace Operations](docs/screenshots/worksplaces_details.png)
+![WorkSpace Operations](docs/screenshots/workplaces_details.png)
 
 
 ## Removal
